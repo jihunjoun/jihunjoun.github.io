@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hanbyul Joo — 연구실/개인 페이지</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img class="avatar" src="assets/avatar.jpg" alt="profile">
+      <h1>Hanbyul Joo (한별 주)</h1>
+      <p class="role">Assistant Professor · Computer Science & Engineering · SNU</p>
+      <p class="contact">Email: <a href="mailto:hbjoo@snu.ac.kr">hbjoo@snu.ac.kr</a> · <a href="#">Google Scholar</a> · <a href="#">CV</a></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>연구분야</h2>
+      <p>3D 인간 행동 인식 · 사회적 인공지능 · 컴퓨터 비전·머신러닝·컴퓨터 그래픽스</p>
+    </section>
+
+    <section>
+      <h2>프로젝트·데이터셋</h2>
+      <ul>
+        <li><strong>Panoptic Studio</strong> — 멀티뷰 3D 모션 캡처</li>
+        <li><strong>SNU ParaHome</strong> — 일상 행동 3D 데이터셋</li>
+        <li><strong>FrankMocap, OpenPose</strong> — 모션/포즈 라이브러리</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>최신 소식</h2>
+      <ul>
+        <li>Oct 2025 – Okawa Research Grant 수상</li>
+        <li>2025 – 여러 학회(NeurIPS/CVPR/ICCV) Area Chair 및 논문 발표</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>대표 논문(선택)</h2>
+      <ol>
+        <li>ParaHome: Parameterizing Everyday Home Activities — CVPR 2025</li>
+        <li>AUDIO Driven Real-Time Facial Animation — SIGGRAPH Asia 2025</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="container">
+    © <span id="year"></span> Hanbyul Joo — Seoul National University
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
