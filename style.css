@@ -32,9 +32,27 @@ header {
 .header-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
+}
+
+.profile-photo {
+    flex-shrink: 0;
+}
+
+.profile-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.05);
 }
 
 .profile-section {
@@ -349,16 +367,22 @@ footer p {
         padding: 20px;
     }
 
+    .profile-photo img {
+        width: 140px;
+        height: 140px;
+    }
+
     h1 {
         font-size: 2em;
     }
 
     .header-content {
         flex-direction: column;
+        text-align: center;
     }
 
     .contact-info {
-        text-align: left;
+        text-align: center;
     }
 
     nav ul {
