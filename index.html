@@ -4,10 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Jihun (Max) Joun — Digital Forensics</title>
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,8 +12,8 @@
     <div class="nav-inner container">
       <a class="brand" href="#home">Jihun (Max) Joun</a>
       <div class="nav-links">
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
+        <!-- Research 메뉴는 상단에서 제거됨 -->
+        <a href="projects.html">Projects</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
         <a class="btn" href="Jihun_Joun_CV.pdf" target="_blank">Download CV</a>
@@ -39,46 +36,48 @@
   </header>
 
   <main class="container">
+    <!-- Research Interests: 메인 페이지에 유지 -->
     <section id="research" class="section">
       <h2>Research Interests</h2>
       <p>Digital forensics, data remnants, automated forensics, IoT & cloud forensics, AI-assisted forensic intelligence, network & memory forensics.</p>
     </section>
 
-    <section id="projects" class="section cards">
-      <h2>Selected Projects</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>A Digital Forensic Framework for Autonomous Robot Incidents</h3>
-          <p>(Forensic Sciences Foundation Research Grant, 2025–2027) <em>*PI</em></p>
-        </article>
-
-        <article class="card">
-          <h3>Core Technologies for Digital Evidence Analysis</h3>
-          <p>(Korea University, 2023–2024)</p>
-        </article>
-
-        <article class="card">
-          <h3>Counter Anti-Forensics Data Acquisition</h3>
-          <p>(Korean National Police Agency, 2022–2023)</p>
-        </article>
-
-        <!-- 필요한 만큼 카드 추가 -->
-      </div>
-    </section>
-
+    <!-- Selected Publications -->
     <section id="publications" class="section">
       <h2>Selected Publications</h2>
       <ol class="pub-list">
-        <li>Im, Park, <strong>Joun</strong>, Lee, Park. “Revisiting logical image formats…” <em>FSI: Digital Investigation</em>, 2024.</li>
-        <li><strong>Joun</strong>, Lee, Park. “Data remnants analysis of document files in Windows…” <em>FSI: Digital Investigation</em>, 2023.</li>
-        <li><strong>Joun</strong>, Lee, Park. “Discovering spoliation of evidence…” <em>FSI: Digital Investigation</em>, 2023.</li>
+        <li>Im, Park, <strong>Joun</strong>, Lee, Park. “Revisiting logical image formats for future digital forensics: A comprehensive analysis on L01 and AFF4-L.” <em>Forensic Science International: Digital Investigation</em>, 2024.</li>
+        <li><strong>Joun</strong>, Lee, Park. “Data remnants analysis of document files in Windows: Microsoft 365 as a case study.” <em>Forensic Science International: Digital Investigation</em>, 2023.</li>
+        <li><strong>Joun</strong>, Lee, Park. “Discovering spoliation of evidence through identifying traces on deleted files in macOS.” <em>Forensic Science International: Digital Investigation</em>, 2023.</li>
       </ol>
     </section>
 
+    <!-- Awards (메인에서 간단히 표시) -->
+    <section id="awards" class="section">
+      <h2>Awards</h2>
+      <ul>
+        <li>Forensic Sciences Foundation Research Grant, 2025</li>
+        <li>NCUIRE Award, Arizona State University, 2025</li>
+        <li>BK21 Graduate Fellowship, National Research Foundation of Korea (NRF), 2022</li>
+        <li>BK21 Graduate Fellowship, National Research Foundation of Korea (NRF), 2021</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
     <section id="contact" class="section">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:jihun.joun@asu.edu">jihun.joun@asu.edu</a></p>
-      <p>Affiliation: School of Interdisciplinary Forensics, ASU (West)</p>
+      <p>Affiliation: School of Interdisciplinary Forensics, Arizona State University (West)</p>
+    </section>
+
+    <!-- News 섹션 (요청대로 추가) -->
+    <section id="news" class="section">
+      <h2>News</h2>
+      <ul>
+        <li>Oct 2025 — Awarded NCUIRE Award, Arizona State University.</li>
+        <li>2025 — Appointed Program Lead, Digital Forensics BS Program at ASU.</li>
+        <li>2025 — Forensic Sciences Foundation Research Grant awarded ($1,400) for "A Digital Forensic Framework for Autonomous Robot Incidents on Edge AI Platforms".</li>
+      </ul>
     </section>
   </main>
 
@@ -90,7 +89,6 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
     // 부드러운 스크롤 (optional)
     document.querySelectorAll('a[href^="#"]').forEach(a=>{
       a.addEventListener('click', e=>{
