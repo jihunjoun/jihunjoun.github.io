@@ -3,98 +3,102 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jihun (Max) Joun — Personal / Lab Page</title>
+  <title>Jihun (Max) Joun — Digital Forensics</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <img class="avatar" src="jihun-profile2.png" alt="profile">
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a class="brand" href="#home">Jihun (Max) Joun</a>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="Jihun_Joun_CV.pdf" target="_blank">Download CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero container">
+    <div class="hero-left">
+      <img class="avatar" src="assets/jihun-profile2.png" alt="Jihun Joun">
+    </div>
+    <div class="hero-right">
       <h1>Jihun (Max) Joun</h1>
-      <p class="role">Assistant Professor</p>
-      <p class="role">School of Interdisciplinary Forensics</p>
-      <p class="role">New College of Interdisciplinary Arts and Sciences</p>
-      <p class="role">Arizona State University</p>
-      <p class="contact">
-        <a href="mailto:jihun.joun@asu.edu">jihun.joun[@]asu.edu</a> · 
-        <a href="Jihun Joun_CV.pdf" target="_blank">CV</a>
+      <p class="subtitle">Assistant Professor · Digital Forensics<br>School of Interdisciplinary Forensics, Arizona State University</p>
+      <p class="hero-actions">
+        <a class="btn primary" href="Jihun_Joun_CV.pdf" target="_blank">View CV</a>
+        <a class="btn ghost" href="#contact">Email</a>
       </p>
     </div>
   </header>
 
   <main class="container">
-    <section>
+    <section id="research" class="section">
       <h2>Research Interests</h2>
-      <p>Digital forensics, IoT forensics, memory forensics</p>
+      <p>Digital forensics, data remnants, automated forensics, IoT & cloud forensics, AI-assisted forensic intelligence, network & memory forensics.</p>
     </section>
 
-    <section>
+    <section id="projects" class="section cards">
+      <h2>Selected Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>A Digital Forensic Framework for Autonomous Robot Incidents</h3>
+          <p>(Forensic Sciences Foundation Research Grant, 2025–2027) <em>*PI</em></p>
+        </article>
+
+        <article class="card">
+          <h3>Core Technologies for Digital Evidence Analysis</h3>
+          <p>(Korea University, 2023–2024)</p>
+        </article>
+
+        <article class="card">
+          <h3>Counter Anti-Forensics Data Acquisition</h3>
+          <p>(Korean National Police Agency, 2022–2023)</p>
+        </article>
+
+        <!-- 필요한 만큼 카드 추가 -->
+      </div>
+    </section>
+
+    <section id="publications" class="section">
       <h2>Selected Publications</h2>
-      <ol>
-        <li>Sorin Im, Hyunah Park, <strong>Jihun Joun</strong>, Sangjin Lee, Jungheum Park. “Revisiting logical image formats for future digital forensics: A comprehensive analysis on L01 and AFF4-L.” <em>Forensic Science International: Digital Investigation</em> 50 (2024): 301811.</li>
-        <li><strong>Jihun Joun</strong>, Sangjin Lee, Jungheum Park. “Data remnants analysis of document files in Windows: Microsoft 365 as a case study.” <em>FSI: Digital Investigation</em> 46 (2023): 301612.</li>
-        <li><strong>Jihun Joun</strong>, Sangjin Lee, Jungheum Park. “Discovering spoliation of evidence through identifying traces on deleted files in macOS.” <em>FSI: Digital Investigation</em> 44 (2023): 301502.</li>
-        <li><strong>Jihun Joun</strong>, Hyunji Chung, Sangjin Lee, Jungheum Park. “Relevance analysis using revision identifier in MS Word.” <em>Journal of Forensic Sciences</em> 66.1 (2021): 323–335.</li>
+      <ol class="pub-list">
+        <li>Im, Park, <strong>Joun</strong>, Lee, Park. “Revisiting logical image formats…” <em>FSI: Digital Investigation</em>, 2024.</li>
+        <li><strong>Joun</strong>, Lee, Park. “Data remnants analysis of document files in Windows…” <em>FSI: Digital Investigation</em>, 2023.</li>
+        <li><strong>Joun</strong>, Lee, Park. “Discovering spoliation of evidence…” <em>FSI: Digital Investigation</em>, 2023.</li>
       </ol>
     </section>
 
-    <section>
-      <h2>Research Projects</h2>
-      <ul>
-        <li>
-          A Digital Forensic Framework for Autonomous Robot Incidents on Edge AI Platforms 
-          (Forensic Sciences Foundation Research Grant, 2025–2027) <em>*PI</em>
-        </li>
-        <li>Foundational Research on Core Technologies for Advancing Digital Evidence Analysis and Management Systems (Korea University, 2023–2024)</li>
-        <li>Research on Elementary Technologies for Solving Social Issues Based on Sound Data (Korea Institute of Science and Technology Information, 2023)</li>
-        <li>Research on Data Acquisition and Analysis for Counter Anti-Forensics (Korean National Police Agency, 2022–2023)</li>
-        <li>Preliminary Study on Building a Digital Forensics Infrastructure for Cybercrime Response in IoT Environments (Korea University, 2021–2022)</li>
-        <li>Research on Construction Model for Big Data-Based Incident Response Analysis (National Security Research Institute, 2021)</li>
-        <li>Research on Construction System for Digital Forensic Tools Verification (Korean National Police Agency, 2021)</li>
-        <li>Development of Digital Forensic Technique for Navigational Equipment (Korea Institute of Marine Science & Technology Promotion, 2019–2020)</li>
-        <li>Development of Digital Forensic Integrated Platform – CARPE Forensics (Institute of Information & Communications Technology Planning & Evaluation, 2018–2020)</li>
-        <li>Development of Damaged Document File Recovery Module (Korean National Police Agency, 2018)</li>
-        <li>Research on Mock Attack Cybersecurity Training Technology (Hanwha Systems Co., Ltd., 2018)</li>
-        <li>Research on Validation of Digital Forensic Tools (National Security Research Institute, 2017)</li>
-        <li>Research on Assessment Methods for Digital Forensic Tools (Supreme Public Prosecutors’ Office, Republic of Korea, 2017)</li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Awards</h2>
-      <ul>
-        <li>Forensic Sciences Foundation Research Grant, 2025</li>
-        <li>NCUIRE Award, Arizona State University, 2025</li>
-        <li>BK21 Graduate Fellowship, National Research Foundation of Korea (NRF), 2022</li>
-        <li>BK21 Graduate Fellowship, National Research Foundation of Korea (NRF), 2021</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Teaching</h2>
-      <ul>
-        <li>FOR 350: Computer Forensics (Fall 2024, Spring/Fall 2025)</li>
-        <li>ACO 331: Network Forensic Analysis (Spring 2025)</li>
-        <li>ACO 499: Individualized Instruction (2025)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Recent News</h2>
-      <ul>
-        <li>Oct 2025 — Received NCUIRE Award</li>
-        <li>2025 — Appointed Program Lead, Digital Forensics BS Program</li>
-        <li>2025 — Serving as Workshops Co-Chair, DFRWS APAC</li>
-      </ul>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:jihun.joun@asu.edu">jihun.joun@asu.edu</a></p>
+      <p>Affiliation: School of Interdisciplinary Forensics, ASU (West)</p>
     </section>
   </main>
 
-  <footer class="container">
-    © <span id="year"></span> Jihun (Max) Joun — Arizona State University
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Jihun (Max) Joun — Arizona State University
+    </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // 부드러운 스크롤 (optional)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
   </script>
 </body>
 </html>
