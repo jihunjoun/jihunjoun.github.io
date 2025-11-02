@@ -10,3 +10,11 @@ a{color:inherit;text-decoration:underline}
 section{background:var(--card);padding:18px;border-radius:8px;margin-top:18px;box-shadow:0 1px 2px rgba(0,0,0,0.03)}
 footer{padding:18px;text-align:center;color:var(--muted);margin-top:24px}
 @media(max-width:600px){.avatar{float:none;display:block;margin:0 auto 12px;width:120px;height:120px}}
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;       /* 이미지를 완전히 둥글게 */
+  object-fit: cover;        /* 사진이 잘리지 않게 맞춤 */
+  box-shadow: 0 0 10px rgba(0,0,0,0.15); /* 부드러운 그림자 */
+  margin-bottom: 1rem;
+}
