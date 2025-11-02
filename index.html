@@ -1,102 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jihun (Max) Joun — Digital Forensics</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jihun (Max) Joun - Digital Forensics Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-inner container">
-      <a class="brand" href="#home">Jihun (Max) Joun</a>
-      <div class="nav-links">
-        <!-- Research 메뉴는 상단에서 제거됨 -->
-        <a href="projects.html">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-        <a class="btn" href="Jihun_Joun_CV.pdf" target="_blank">Download CV</a>
-      </div>
-    </div>
-  </nav>
-
-  <header id="home" class="hero container">
-    <div class="hero-left">
-      <img class="avatar" src="assets/jihun-profile2.png" alt="Jihun Joun">
-    </div>
-    <div class="hero-right">
-      <h1>Jihun (Max) Joun</h1>
-      <p class="subtitle">Assistant Professor · Digital Forensics<br>School of Interdisciplinary Forensics, Arizona State University</p>
-      <p class="hero-actions">
-        <a class="btn primary" href="Jihun_Joun_CV.pdf" target="_blank">View CV</a>
-        <a class="btn ghost" href="#contact">Email</a>
-      </p>
-    </div>
-  </header>
-
-  <main class="container">
-    <!-- Research Interests: 메인 페이지에 유지 -->
-    <section id="research" class="section">
-      <h2>Research Interests</h2>
-      <p>Digital forensics, data remnants, automated forensics, IoT & cloud forensics, AI-assisted forensic intelligence, network & memory forensics.</p>
-    </section>
-
-    <!-- Selected Publications -->
-    <section id="publications" class="section">
-      <h2>Selected Publications</h2>
-      <ol class="pub-list">
-        <li>Im, Park, <strong>Joun</strong>, Lee, Park. “Revisiting logical image formats for future digital forensics: A comprehensive analysis on L01 and AFF4-L.” <em>Forensic Science International: Digital Investigation</em>, 2024.</li>
-        <li><strong>Joun</strong>, Lee, Park. “Data remnants analysis of document files in Windows: Microsoft 365 as a case study.” <em>Forensic Science International: Digital Investigation</em>, 2023.</li>
-        <li><strong>Joun</strong>, Lee, Park. “Discovering spoliation of evidence through identifying traces on deleted files in macOS.” <em>Forensic Science International: Digital Investigation</em>, 2023.</li>
-      </ol>
-    </section>
-
-    <!-- Awards (메인에서 간단히 표시) -->
-    <section id="awards" class="section">
-      <h2>Awards</h2>
-      <ul>
-        <li>Forensic Sciences Foundation Research Grant, 2025</li>
-        <li>NCUIRE Award, Arizona State University, 2025</li>
-        <li>BK21 Graduate Fellowship, National Research Foundation of Korea (NRF), 2022</li>
-        <li>BK21 Graduate Fellowship, National Research Foundation of Korea (NRF), 2021</li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:jihun.joun@asu.edu">jihun.joun@asu.edu</a></p>
-      <p>Affiliation: School of Interdisciplinary Forensics, Arizona State University (West)</p>
-    </section>
-
-    <!-- News 섹션 (요청대로 추가) -->
-    <section id="news" class="section">
-      <h2>News</h2>
-      <ul>
-        <li>Oct 2025 — Awarded NCUIRE Award, Arizona State University.</li>
-        <li>2025 — Appointed Program Lead, Digital Forensics BS Program at ASU.</li>
-        <li>2025 — Forensic Sciences Foundation Research Grant awarded ($1,400) for "A Digital Forensic Framework for Autonomous Robot Incidents on Edge AI Platforms".</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="footer">
     <div class="container">
-      © <span id="year"></span> Jihun (Max) Joun — Arizona State University
-    </div>
-  </footer>
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <h1>Jihun (Max) Joun</h1>
+                        <p class="title">Assistant Professor, Digital Forensics</p>
+                        <p class="affiliation">School of Interdisciplinary Forensics<br>
+                        Arizona State University</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <p>📧 <a href="mailto:jihun.joun@asu.edu">jihun.joun@asu.edu</a></p>
+                    <p>📱 602-702-1892</p>
+                    <p>🔗 <a href="https://github.com/jihunjoun" target="_blank">GitHub</a></p>
+                </div>
+            </div>
+        </header>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // 부드러운 스크롤 (optional)
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        e.preventDefault();
-        const target = document.querySelector(a.getAttribute('href'));
-        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
-      });
-    });
-  </script>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#service">Service</a></li>
+            </ul>
+        </nav>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an Assistant Professor in the School of Interdisciplinary Forensics at Arizona State University's West Campus. My research focuses on digital forensics, with particular emphasis on data remnants analysis, anti-forensics techniques, and developing forensic frameworks for emerging technologies.</p>
+            
+            <p>I received my Ph.D. in Information Security from Korea University in 2023, where my dissertation focused on developing a digital forensic framework for data remnants forensics. Prior to joining ASU, I served as an Assistant Professor at Sangmyung University and a Postdoctoral Researcher at Korea University.</p>
+        </section>
+
+        <!-- Research Interests -->
+        <section id="research">
+            <h2>Research Interests</h2>
+            <ul class="research-list">
+                <li>Digital Forensics & Incident Response</li>
+                <li>Data Remnants Analysis</li>
+                <li>Anti-Forensics and Counter-Forensics</li>
+                <li>Document File Forensics</li>
+                <li>IoT and Edge AI Security</li>
+                <li>Autonomous Robot Forensics</li>
+                <li>File System Forensics (Windows, macOS)</li>
+            </ul>
+        </section>
+
+        <!-- News & Updates -->
+        <section id="news">
+            <h2>News & Updates</h2>
+            <ul class="news-list">
+                <li><strong>2025:</strong> Received NCUIRE Award from Arizona State University</li>
+                <li><strong>2025:</strong> Serving as Workshops Co-Chair for DFRWS APAC '25</li>
+                <li><strong>2025:</strong> Appointed as Program Lead for Digital Forensics BS Program</li>
+                <li><strong>2024:</strong> Joined Arizona State University as Assistant Professor</li>
+                <li><strong>2023:</strong> Completed Ph.D. in Information Security at Korea University</li>
+            </ul>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            <div class="publication-list">
+                <div class="publication">
+                    <p class="pub-title">Revisiting logical image formats for future digital forensics: A comprehensive analysis on L01 and AFF4-L</p>
+                    <p class="pub-authors">Sorin Im, Hyunah Park, <strong>Jihun Joun</strong>, Sangjin Lee, Jungheum Park</p>
+                    <p class="pub-venue"><em>Forensic Science International: Digital Investigation</em>, Vol. 50, 2024</p>
+                </div>
+
+                <div class="publication">
+                    <p class="pub-title">Data remnants analysis of document files in Windows: Microsoft 365 as a case study</p>
+                    <p class="pub-authors"><strong>Jihun Joun</strong>, Sangjin Lee, Jungheum Park</p>
+                    <p class="pub-venue"><em>Forensic Science International: Digital Investigation</em>, Vol. 46, 2023</p>
+                </div>
+
+                <div class="publication">
+                    <p class="pub-title">Discovering spoliation of evidence through identifying traces on deleted files in macOS</p>
+                    <p class="pub-authors"><strong>Jihun Joun</strong>, Sangjin Lee, Jungheum Park</p>
+                    <p class="pub-venue"><em>Forensic Science International: Digital Investigation</em>, Vol. 44, 2023</p>
+                </div>
+
+                <div class="publication">
+                    <p class="pub-title">Relevance analysis using revision identifier in MS Word</p>
+                    <p class="pub-authors"><strong>Jihun Joun</strong>, Hyunji Chung, Sangjin Lee, Jungheum Park</p>
+                    <p class="pub-venue"><em>Journal of Forensic Sciences</em>, Vol. 66(1), 2021, pp. 323-335</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Projects -->
+        <section id="projects">
+            <h2>Research Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Current Projects</h3>
+                    <ul>
+                        <li><strong>A Digital Forensic Framework for Autonomous Robot Incidents on Edge AI Platforms</strong> (2025–2027)
+                            <br><em>Principal Investigator, Forensic Sciences Foundation Research Grant</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Past Projects (Selected)</h3>
+                    <ul>
+                        <li><strong>Foundational Research on Core Technologies for Advancing Digital Evidence Analysis and Management Systems</strong> (2023–2024)
+                            <br><em>Korea University</em>
+                        </li>
+                        <li><strong>Research on Data Acquisition and Analysis for Counter Anti-Forensics</strong> (2022–2023)
+                            <br><em>Korean National Police Agency</em>
+                        </li>
+                        <li><strong>Development of Digital Forensic Integrated Platform – CARPE Forensics</strong> (2018–2020)
+                            <br><em>Institute of Information & Communications Technology Planning & Evaluation (IITP)</em>
+                        </li>
+                        <li><strong>Development of Digital Forensic Technique for Navigational Equipment</strong> (2019–2020)
+                            <br><em>Korea Institute of Marine Science & Technology Promotion</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software -->
+        <section id="software">
+            <h2>Software & Tools</h2>
+            <div class="software-list">
+                <div class="software-item">
+                    <h3>CARPE Forensics</h3>
+                    <p>An integrated digital forensic platform for comprehensive digital evidence analysis</p>
+                    <p><a href="https://github.com/dfrc-korea/carpe" target="_blank">View on GitHub</a></p>
+                </div>
+                <div class="software-item">
+                    <h3>FICA</h3>
+                    <p>File Carving & Analyzer for recovering and analyzing fragmented files</p>
+                </div>
+                <div class="software-item">
+                    <h3>DEFA</h3>
+                    <p>Document file analyzer for forensic examination of document metadata and structure</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching -->
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <div class="teaching-section">
+                <h3>Arizona State University (2024-Present)</h3>
+                <ul>
+                    <li>FOR 350: Computer Forensics (Fall 2024, Spring 2025, Fall 2025)</li>
+                    <li>ACO 331: Network Forensic Analysis (Spring 2025)</li>
+                    <li>ACO 499: Individualized Instruction</li>
+                </ul>
+
+                <h3>Previous Institutions</h3>
+                <ul>
+                    <li>Computer Mathematics – Calculus (Sangmyung University, 2024)</li>
+                    <li>Data Structure (Sangmyung University, 2024)</li>
+                    <li>Digital Forensics (Seoul Cyber University, 2023)</li>
+                    <li>Digital Forensics Practice (Dongguk University, 2022)</li>
+                    <li>Introduction to Digital Forensics (Korea University, 2022)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Service -->
+        <section id="service">
+            <h2>Professional Service</h2>
+            <div class="service-section">
+                <h3>Academic Leadership</h3>
+                <ul>
+                    <li>Program Lead, Digital Forensics BS Program (2025-Present)</li>
+                    <li>Assessment Coordinator, Computational Forensics Program (2024-Present)</li>
+                    <li>Faculty Advisor, Digital Forensics and Innovation Lab (DFIL) (2024-Present)</li>
+                </ul>
+
+                <h3>Conference Organization</h3>
+                <ul>
+                    <li>Workshops Co-Chair, DFRWS APAC '25</li>
+                    <li>Workshops Co-Chair, DFRWS APAC '24</li>
+                    <li>Technical Program Committee Member, DFRWS APAC '25</li>
+                </ul>
+
+                <h3>Professional Memberships</h3>
+                <ul>
+                    <li>Associate Member, American Academy of Forensic Sciences (AAFS)</li>
+                    <li>Peer Reviewer, National Research Foundation of Korea</li>
+                </ul>
+
+                <h3>Community Engagement</h3>
+                <ul>
+                    <li>Presenter, Behind Crime Scene Investigation (2025)</li>
+                    <li>Chair, Digital Forensics Challenge, Open Door 2025</li>
+                    <li>Media Contributor, Fox10 News (2025)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Jihun (Max) Joun. All rights reserved.</p>
+            <p>School of Interdisciplinary Forensics, Arizona State University</p>
+        </footer>
+    </div>
 </body>
 </html>
